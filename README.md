@@ -5,3 +5,4 @@ For now, the plugin adds the commands "/logs", this command will open a new tab 
 Big thanks to xiluisx, he helped a lot in the plugin development.
 Thanks too to The-g for the contributions he made. 
 And so, thanks to potatomantiger for his help. 
+Problems with the plugin, contact Deaddiamond#5065 (Discord). 
