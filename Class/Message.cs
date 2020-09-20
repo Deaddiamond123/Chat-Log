@@ -9,7 +9,7 @@ namespace ClassLibrary8
 
         public void AddMessage(Message message)
         {
-            if (messages.Count >= 100)
+            if (messages.Count >= 300)
             {
                 messages.Dequeue();
             }
