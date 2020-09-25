@@ -18,5 +18,4 @@ namespace ClassLibrary8
             messagesQueue = new MessagesQueue(); 
         } 
     }
-}//so uhh, brb while I try it 
-// kk
+}
