@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Classes\**" />
+    <EmbeddedResource Remove="Classes\**" />
+    <None Remove="Classes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Scripts">
+      <HintPath>..\..\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\ClassLibrary4\ClassLibrary4\bin\Debug\netstandard2.0\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="zGameSource">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\Plugins\zGameSource.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

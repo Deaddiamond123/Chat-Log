@@ -1,6 +1,5 @@
 using BrokeProtocol.API;
 using BrokeProtocol.Managers;
-using ClassLibrary8;
 
 namespace ClassLibrary8.Events
 {
@@ -12,4 +11,4 @@ namespace ClassLibrary8.Events
             Core.Instance.SvManager = svManager;
         }
     }
-} //This basically starts it. 
+}
