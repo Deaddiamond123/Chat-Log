@@ -1,7 +1,7 @@
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
 
-namespace ClassLibrary8.Events
+namespace Chat_Log.Events
 {
     public class GlobalMessage : IScript
     {

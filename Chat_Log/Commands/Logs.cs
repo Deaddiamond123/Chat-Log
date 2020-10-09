@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
-using ClassLibrary8;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     class Logs : IScript
     {
