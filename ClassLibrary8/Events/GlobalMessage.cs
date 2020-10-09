@@ -8,7 +8,7 @@ namespace ClassLibrary8.Events
         [Target(GameSourceEvent.PlayerGlobalChatMessage,ExecutionMode.Event)]
         public void OnGlobalMessage(ShPlayer player, string message)
         {
-            Core.Instance.MessagesQueue.AddMessage(new Message(player.username,message));
+            Core.Instance.MessagesQueue.AddMessage(new Message(player.username,message, "Global"));
         }
     }
 }

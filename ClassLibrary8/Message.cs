@@ -9,7 +9,7 @@ namespace ClassLibrary8
 
         public void AddMessage(Message message)
         {
-            if (messages.Count >= 300)
+            if (messages.Count >= Core.Instance.Settings.MaxLogMessage)
             {
                 messages.Dequeue();
             }
@@ -29,10 +29,13 @@ namespace ClassLibrary8
 
         public string Content { get; set; }
 
-        public Message(string Author, string Content)
+        public string Type { get; set; }
+
+        public Message(string Author, string Content, string Type)
         {
             this.Author = Author;
             this.Content = Content;
+            this.Type = Type;
         }
     }
 }

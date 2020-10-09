@@ -8,7 +8,7 @@ namespace ClassLibrary8.Events
         [Target(GameSourceEvent.PlayerLocalChatMessage, ExecutionMode.Event)]
         public void OnLocalMessage(ShPlayer player, string message)
         {
-            Core.Instance.MessagesQueue.AddMessage(new Message(player.username,message));
+            Core.Instance.MessagesQueue.AddMessage(new Message(player.username, message, "Local"));
         }
     }
 }

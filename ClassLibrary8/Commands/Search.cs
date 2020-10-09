@@ -15,7 +15,7 @@ namespace ClassLibrary8.Commands
 
         private void OnSearchMessage(ShPlayer player, string message)
         {
-            var results = Core.Instance.MessagesQueue.Messages.Where(x=>x.Content.Contains(message));
+            var results = Core.Instance.MessagesQueue.Messages.Where(x=>x.Type == "Local");
             var sb = new StringBuilder();
             foreach(var result in results)
             {
