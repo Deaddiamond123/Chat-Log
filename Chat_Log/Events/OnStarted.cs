@@ -1,7 +1,7 @@
 using BrokeProtocol.API;
 using BrokeProtocol.Managers;
 
-namespace ClassLibrary8.Events
+namespace Chat_Log.Events
 {
     public class OnStarted : IScript
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     public class LocalRegister : IScript
     {
@@ -14,9 +14,9 @@ namespace ClassLibrary8.Commands
             CommandHandler.RegisterCommand("MiniLog", new Action<ShPlayer, string>(LocalCommand));
         }
 
-        private void LocalCommand(ShPlayer player, string Type)
+        private void LocalCommand(ShPlayer player, string type)
         {
-            var results = Core.Instance.MessagesQueue.Messages.Where(x =>x.Type == Type);
+            var results = Core.Instance.MessagesQueue.Messages.Where(x =>x.Type == type);
             var sb = new StringBuilder();
             foreach (var result in results)
             {

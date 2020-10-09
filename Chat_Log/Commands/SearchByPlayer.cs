@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     public class SearchByPlayer : IScript
     {

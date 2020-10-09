@@ -4,7 +4,7 @@ using System.Text;
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     public class Search : IScript
     {
