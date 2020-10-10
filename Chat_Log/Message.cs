@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace ClassLibrary8
+namespace Chat_Log
 {
     public class MessagesQueue
     {
@@ -9,7 +9,7 @@ namespace ClassLibrary8
 
         public void AddMessage(Message message)
         {
-            if (messages.Count >= 300)
+            if (messages.Count >= Core.Instance.Settings.MaxLogMessages)
             {
                 messages.Dequeue();
             }
@@ -36,6 +36,7 @@ namespace ClassLibrary8
             this.Author = Author;
             this.Content = Content;
             this.Type = Type;
+
         }
     }
 }

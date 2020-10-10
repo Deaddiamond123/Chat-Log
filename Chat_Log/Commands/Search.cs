@@ -4,7 +4,7 @@ using System.Text;
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     public class Search : IScript
     {
@@ -15,7 +15,7 @@ namespace ClassLibrary8.Commands
 
         private void OnSearchMessage(ShPlayer player, string message)
         {
-            var results = Core.Instance.MessagesQueue.Messages.Where(x=>x.Content.Contains(message));
+            var results = Core.Instance.MessagesQueue.Messages.Where(x => x.Content.Contains(message));
             var sb = new StringBuilder();
             foreach(var result in results)
             {
