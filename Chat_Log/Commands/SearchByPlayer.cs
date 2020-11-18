@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     public class SearchByPlayer : IScript
     {
@@ -24,7 +24,7 @@ namespace ClassLibrary8.Commands
                 sb.AppendLine($"{result.Author}: {result.Content}");
             }
 
-            player.svPlayer.SendTextPanel($"Searching for: {target}",sb.ToString());
+            player.svPlayer.SendTextMenu($"Searching for: {target}",sb.ToString());
         }
     }
 }

@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Text;
 using BrokeProtocol.API;
 using BrokeProtocol.Entities;
-using ClassLibrary8;
+using Chat_Log;
 
-namespace ClassLibrary8.Commands
+namespace Chat_Log.Commands
 {
     class Logs : IScript
     {
@@ -22,7 +22,7 @@ namespace ClassLibrary8.Commands
             {
                 sb.AppendLine($"{message.Author}: {message.Content}");
             }
-            player.svPlayer.SendTextPanel("Chat Log", sb.ToString());
+            player.svPlayer.SendTextMenu("Chat Log", sb.ToString());
         }
     }
 }
