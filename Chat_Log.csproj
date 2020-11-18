@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Scripts">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+	  <Reference Include="NewtonSoft.Json">
+		  <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\BrokeProtocol_Data\Managed\NewtonSoft.Json.dll</HintPath>
+	  </Reference>
+	  <Reference Include="zGameSource">
+	    <HintPath>D:\SteamLibrary\steamapps\common\BROKE PROTOCOL\Plugins\zGameSource.dll</HintPath>
+	  </Reference>
+  </ItemGroup>
+
+</Project>
