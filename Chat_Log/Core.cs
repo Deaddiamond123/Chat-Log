@@ -9,11 +9,13 @@ namespace Chat_Log
     public class Core : Plugin
     {
         public static Core Instance { get; internal set; }
+
         public SvManager SvManager { get; set; }
 
         public MessagesQueue MessagesQueue { get; set; }
 
         public Settings Settings { get; set; } = new Settings();
+
 
         public Core()
         {
