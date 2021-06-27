@@ -8,7 +8,7 @@ namespace Chat_Log.Events
         [Target(GameSourceEvent.PlayerGlobalChatMessage,ExecutionMode.Event)]
         public void OnGlobalMessage(ShPlayer player, string message)
         {
-            Core.Instance.MessagesQueue.AddMessage(new Message(player.username,message, "Global"));
+            Core.Instance.MessagesQueue.AddMessage(new Message(player.username,message,"Global"));
         }
     }
 }

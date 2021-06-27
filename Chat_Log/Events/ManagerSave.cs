@@ -8,7 +8,7 @@ namespace Chat_Log.Events
         [Target(GameSourceEvent.ManagerSave, ExecutionMode.Event)]
         public void OnManagerSave(SvManager manager)
         {
-            Core.Instance.SaveSettings();
+            Core.Instance.LoadSettings();
         }
     }
 }
