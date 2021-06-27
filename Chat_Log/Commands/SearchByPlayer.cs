@@ -16,6 +16,7 @@ namespace Chat_Log.Commands
 
         private void OnSearchByPlayer(ShPlayer player, string target)
         {
+            string[] LanguageSt = { "Searching for:", "Buscando mensajes de:" };
             var results = Core.Instance.MessagesQueue.Messages.Where(x=>x.Author == target);
             var sb = new StringBuilder();
 

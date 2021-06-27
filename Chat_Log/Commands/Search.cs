@@ -15,13 +15,14 @@ namespace Chat_Log.Commands
 
         private void OnSearchMessage(ShPlayer player, string message)
         {
+            string[] LanguageSt = { "Searching:", "Buscando:" };
             var results = Core.Instance.MessagesQueue.Messages.Where(x => x.Content.Contains(message));
             var sb = new StringBuilder();
             foreach(var result in results)
             {
                 sb.AppendLine($"{result.Author}: {result.Content}");
             }
-            player.svPlayer.SendTextMenu($"Searching: {message}", sb.ToString());
+            player.svPlayer.SendTextMenu(LanguageSt[Core.Instance.Settings.Language],message, sb.ToString());
         }
     }
 }

@@ -16,13 +16,14 @@ namespace Chat_Log.Commands
         }
         public void OnGlobalCommand(ShPlayer player)
         {
+            string[] Test = { "Global Logs", "Log del chat global" };
             var results = Core.Instance.MessagesQueue.Messages.Where(x => x.Type == "Global");
             var sb = new StringBuilder();
             foreach (var result in results)
             {
                 sb.AppendLine($"{result.Author}: {result.Content}");
             }
-            player.svPlayer.SendTextMenu($"Global & Local Logs", sb.ToString());
+            player.svPlayer.SendTextMenu(Test[Core.Instance.Settings.Language], sb.ToString());
         }
     } 
 }
