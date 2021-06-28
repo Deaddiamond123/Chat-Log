@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Linq;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ namespace Chat_Log.Commands
 
         private void OnSearchByPlayer(ShPlayer player, string target)
         {
-            string[] LanguageSt = { "Searching for:", "Buscando mensajes de:" };
+            string[] LanguageSt = { "Searching for: ", "Buscando mensajes de: ", "Rechercher pour: ", "Wyszukaj gracza:" };
             var results = Core.Instance.MessagesQueue.Messages.Where(x=>x.Author == target);
             var sb = new StringBuilder();
 
@@ -25,7 +25,7 @@ namespace Chat_Log.Commands
                 sb.AppendLine($"{result.Author}: {result.Content}");
             }
 
-            player.svPlayer.SendTextMenu($"Searching for: {target}",sb.ToString());
+            player.svPlayer.SendTextMenu(LanguageSt[Core.Instance.Settings.Language]+target,sb.ToString());
         }
     }
 }

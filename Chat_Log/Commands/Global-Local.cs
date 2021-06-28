@@ -16,7 +16,7 @@ namespace Chat_Log.Commands
         }
         public void OnGlobalCommand(ShPlayer player)
         {
-            string[] Test = { "Global Logs", "Log del chat global" };
+            string[] Test = { "Global Logs", "Registro del chat global", "Logs globales", "Globalne Logi" };
             var results = Core.Instance.MessagesQueue.Messages.Where(x => x.Type == "Global");
             var sb = new StringBuilder();
             foreach (var result in results)

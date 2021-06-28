@@ -18,7 +18,7 @@ namespace Chat_Log.Commands
         }
         public void MiniLocalCommand(ShPlayer player)
         {
-            string[] LanguageSt = { "Local Messages", "Mensajes locales" };
+            string[] LanguageSt = { "Local Logs", "Registro del chat local", "Logs locales", "Lokalne Logi" };
             var results = Core.Instance.MessagesQueue.Messages.Where(x=>x.Type =="Local");
             var sb = new StringBuilder();
             foreach (var result in results)
