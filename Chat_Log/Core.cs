@@ -20,7 +20,7 @@ namespace Chat_Log
         public Core()
         {
             Instance = this;
-            Info = new PluginInfo("LoggerPlugin", "logger");
+            Info = new PluginInfo("Chatlog", "CL");
             MessagesQueue = new MessagesQueue();
             LoadSettings();
             SaveSettings();
@@ -39,6 +39,7 @@ namespace Chat_Log
             {
                 file.Write(json);
             }
+            Debug.LogWarning("[ChatLog] Saved correctly.");
         }
 
         public void LoadSettings()
@@ -48,6 +49,7 @@ namespace Chat_Log
 
             var jsonStr = File.ReadAllText(Path.Combine("Plugins", "ChatLog", "settings.json"));
             Settings = JsonConvert.DeserializeObject<Settings>(jsonStr);
+            Debug.LogWarning("[ChatLog] Loaded correctly.");
         }
     }
 }
